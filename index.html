@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Railways Train Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Train Schedule Information</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by Train Name, Number, or Station...">
+        </div>
+    </header>
+
+    <main>
+        <div id="loading">Loading train data...</div>
+        <div class="table-container">
+            <table id="trainTable">
+                <thead>
+                    <tr>
+                        <th>Train No.</th>
+                        <th>Train Name</th>
+                        <th>Station Code</th>
+                        <th>Station Name</th>
+                        <th>Arrival</th>
+                        <th>Departure</th>
+                        <th>Distance</th>
+                        <th>Source</th>
+                        <th>Destination</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    </tbody>
+            </table>
+        </div>
+        <div id="pagination-controls">
+            <button id="prevBtn" disabled>Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextBtn">Next</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
